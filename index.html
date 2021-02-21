@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pico &amp; Placa</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <script src="assets/js/app.js"></script>
+    <div id="navbar">
+        <div id="app-name">Pico & Placa predictor</div>
+    </div>
+    <div>
+        <form id="mainForm">
+            <!-- License plate -->
+            <p id="lblPlate:" class="label">Car's license plate:</p>
+            <input id="txtPlate" type="text" required="true" placeholder="ABC-1234" minlength="7" maxlength="8"
+                onkeyup="formatLicensePlate()">
+
+            <!-- Date -->
+            <p id="lblDate:" class="label">Select a date:</p>
+            <input id="txtDate" type="date" required="true">
+
+            <!-- Time -->
+            <p id="lblTime:" class="label">Select a time:</p>
+            <input id="txtTime" type="time" required="true">
+
+            <!-- Result -->
+            <button id="btnCheckRestriction" type="button" onclick="checkRestriction()">Check restriction</button>
+            <p id="lblMessage" class="message"></p>
+        </form>
+    </div>
+</body>
+
+</html>
